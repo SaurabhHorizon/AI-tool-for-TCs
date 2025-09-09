@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "styles": {
+    "manual": {
+      "happy_path": {
+        "title_prefix": "Happy Path — ",
+        "steps": [
+          "system ready",
+          "valid input provided",
+          "action performed"
+        ],
+        "expected": "success message shown"
+      },
+      "validation": {
+        "title_prefix": "Validation — ",
+        "steps": [
+          "system ready",
+          "invalid input provided",
+          "action attempted"
+        ],
+        "expected": "error message shown"
+      },
+      "boundary": {
+        "title_prefix": "Boundary — ",
+        "steps": [
+          "system ready",
+          "boundary values used (min/max/length/threshold)",
+          "action performed"
+        ],
+        "expected": "values within range succeed; out-of-range rejected with message"
+      }
+    },
+    "gherkin": {
+      "given_default": "the system is available",
+      "when_default": "the user performs the action with valid inputs",
+      "then_default": "the expected result is displayed"
+    }
+  },
+  "keywords": {
+    "auth": ["login", "logout", "signin", "authenticate", "2fa", "otp", "session"],
+    "validation": ["invalid", "error", "empty", "required", "format", "length"],
+    "crud": ["create", "update", "delete", "edit", "add", "modify"],
+    "api": ["api", "endpoint", "request", "response", "status code", "json", "xml"],
+    "payment": ["payment", "checkout", "invoice", "refund", "transaction"],
+    "security": ["token", "encrypt", "hash", "jwt", "xss", "csrf", "forbidden", "unauthorized"],
+    "limits": ["limit", "quota", "threshold", "max attempts", "retry"],
+    "perf": ["performance", "latency", "throughput", "load"]
+  }
+}

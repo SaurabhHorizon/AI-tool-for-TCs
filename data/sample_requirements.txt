@@ -1,0 +1,7 @@
+As a user, I must be able to register with email and password, and receive a verification email.
+Login must support email + password and optional 2FA via OTP within 60 seconds.
+Admins can create, edit, and delete product records with name, price, and stock quantity.
+If invalid data is entered (e.g., negative price or empty name), the system must show validation errors.
+The checkout API must return 201 on success, include an orderId, and handle refunds.
+Only users with role 'Manager' can approve high-value orders (> ₹50,000); others must be denied.
+Password must be at least 12 characters with one uppercase, one number, and one special character.
